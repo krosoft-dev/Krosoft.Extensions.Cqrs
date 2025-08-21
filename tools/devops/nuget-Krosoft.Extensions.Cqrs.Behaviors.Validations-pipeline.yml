@@ -23,4 +23,3 @@ extends:
     packages:
       - "Krosoft.Extensions.Cqrs.Behaviors"
       - "Krosoft.Extensions.Cqrs.Behaviors.Validations"
-      - "Krosoft.Extensions.Validations"
