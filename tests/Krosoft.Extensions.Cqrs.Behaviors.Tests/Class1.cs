@@ -1,4 +1,6 @@
 ﻿using System.Reflection;
+using Krosoft.Extensions.Cqrs.Behaviors.Extensions;
+using Krosoft.Extensions.Cqrs.Behaviors.PipelineBehaviors;
 using Krosoft.Extensions.Cqrs.Models.Queries;
 using Krosoft.Extensions.Testing;
 using Krosoft.Extensions.Testing.Extensions;
@@ -14,13 +16,21 @@ public class ZipServiceTests : BaseTest
 {
     private IMediator _mediator = null!;
     private Mock<ILogger<HelloDotNet9QueryHandler>> _mockLogger = null!;
+    private Mock<ILogger<LoggingPipelineBehavior<HelloQuery, string>>> _mockLogger2 = null!;
 
     protected override void AddServices(IServiceCollection services, IConfiguration configuration)
     {
         _mockLogger = new Mock<ILogger<HelloDotNet9QueryHandler>>();
         services.SwapTransient(_ => _mockLogger.Object);
+        _mockLogger2 = new Mock<ILogger<LoggingPipelineBehavior<HelloQuery,string>>>();
+        services.SwapTransient(_ => _mockLogger2.Object);
 
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+
+        services.AddBehaviors(options =>
+        {
+            options.AddLogging();
+        });
     }
 
     [TestInitialize]
