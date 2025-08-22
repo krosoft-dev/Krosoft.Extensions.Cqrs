@@ -4,7 +4,7 @@
 
 		<PackageReference Include="Krosoft.Extensions.Testing" Version="2025.5.13.1513" />
 
-		<PackageReference Include="MediatR" Version="12.5.0" />	</ItemGroup>
+		<PackageReference Include="MediatR" Version="13.0.0" />	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\src\Krosoft.Extensions.Cqrs.Behaviors\Krosoft.Extensions.Cqrs.Behaviors.csproj" />
