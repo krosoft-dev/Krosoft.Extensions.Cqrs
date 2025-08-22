@@ -2,6 +2,8 @@
 
 	<ItemGroup>
 
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.0" />
+
 		<PackageReference Include="Krosoft.Extensions.Testing" Version="2025.8.21.2146" />
 
 		<PackageReference Include="MediatR" Version="12.5.0" />	</ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using Krosoft.Extensions.Core.Models;
+using Krosoft.Extensions.Core.Models.Dto;
 
 namespace Krosoft.Extensions.Cqrs.Models.Queries;
 
