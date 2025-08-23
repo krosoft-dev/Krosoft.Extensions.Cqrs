@@ -2,9 +2,9 @@
 
 public interface IAuth
 {
-    string? UtilisateurCourantId { get; set; }
-    string? TenantId { get; set; }
+    string? CurrentUserId { get; set; }
+    string? CurrentTenantId { get; set; }
 
-    bool IsUtilisateurRequired => true;
-    bool IsTenantRequired => true;
+    bool IsUserIdRequired => true;
+    bool IsTenantIdRequired => true;
 }

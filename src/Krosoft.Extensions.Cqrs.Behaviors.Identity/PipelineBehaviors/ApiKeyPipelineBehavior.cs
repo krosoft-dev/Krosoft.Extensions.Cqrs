@@ -32,10 +32,10 @@ public class ApiKeyPipelineBehavior<TRequest, TResponse> : IPipelineBehavior<TRe
 
         switch (request)
         {
-            case IAuth auth:
-                if (auth.IsUtilisateurRequired)
+            case IApiKey auth:
+                if (auth.IsApiKeyRequired)
                 {
-                    auth.UtilisateurCourantId = await _apiKeyProvider.GetApiKeyAsync(cancellationToken);
+                    auth.CurrentApiKey = await _apiKeyProvider.GetApiKeyAsync(cancellationToken);
                 }
 
                 break;

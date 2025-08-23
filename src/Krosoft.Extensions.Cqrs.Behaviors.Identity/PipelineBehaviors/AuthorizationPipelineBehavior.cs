@@ -28,19 +28,19 @@ public class AuthorizationPipelineBehavior<TRequest, TResponse> : IPipelineBehav
                                         CancellationToken cancellationToken)
     {
         var sw = Stopwatch.StartNew();
-        _logger.LogInformation($"Handling AuthorizationPipelineBehavior <{typeof(TRequest).Name},{typeof(TResponse).Name}>");
+        _logger.LogInformation("Handling AuthorizationPipelineBehavior <{TRequest},{TResponse}>", typeof(TRequest).Name, typeof(TResponse).Name);
 
         switch (request)
         {
             case IAuth auth:
-                if (auth.IsUtilisateurRequired)
+                if (auth.IsUserIdRequired)
                 {
-                    auth.UtilisateurCourantId = _identityService.GetId();
+                    auth.CurrentUserId = _identityService.GetId();
                 }
 
-                if (auth.IsTenantRequired)
+                if (auth.IsTenantIdRequired)
                 {
-                    auth.TenantId = _identityService.GetTenantId();
+                    auth.CurrentTenantId = _identityService.GetUniqueTenantId();
                 }
 
                 break;
@@ -54,7 +54,7 @@ public class AuthorizationPipelineBehavior<TRequest, TResponse> : IPipelineBehav
                 throw new KrosoftTechnicalException($"Le type {typeof(TRequest)} n'est pas pris en compte pour cet appel.");
         }
 
-        _logger.LogInformation($"Handled AuthorizationPipelineBehavior <{typeof(TRequest).Name},{typeof(TResponse).Name}> in {sw.Elapsed.ToShortString()}");
+        _logger.LogInformation("Handled AuthorizationPipelineBehavior <{TRequest},{TResponse}> in {Elapsed}", typeof(TRequest).Name, typeof(TResponse).Name, sw.Elapsed.ToShortString());
         return await next();
     }
 }
