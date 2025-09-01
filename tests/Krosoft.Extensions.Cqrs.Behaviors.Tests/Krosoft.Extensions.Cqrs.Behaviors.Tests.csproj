@@ -1,18 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
 	<ItemGroup>
-
 		<PackageReference Include="JetBrains.Annotations" Version="2025.2.1" />
-
 		<PackageReference Include="Krosoft.Extensions.Testing" Version="2025.8.25.2570" />
-
-		<PackageReference Include="MediatR" Version="12.5.0" />	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\..\src\Krosoft.Extensions.Cqrs.Behaviors\Krosoft.Extensions.Cqrs.Behaviors.csproj" />
-	  <ProjectReference Include="..\..\src\Krosoft.Extensions.Cqrs\Krosoft.Extensions.Cqrs.csproj" />
+		<PackageReference Include="MediatR" Version="12.5.0" />
 	</ItemGroup>
-	 
-		 
-	 
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Krosoft.Extensions.Cqrs.Behaviors\Krosoft.Extensions.Cqrs.Behaviors.csproj" />
+		<ProjectReference Include="..\..\src\Krosoft.Extensions.Cqrs\Krosoft.Extensions.Cqrs.csproj" />
+	</ItemGroup>
 </Project>
