@@ -4,7 +4,7 @@
 		<Description>Classes de base, extensions et helpers pour simplifier l'utilisation de CQRS.</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.8.22.2201" />
+		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.9.9.2873" />
 		<PackageReference Include="MediatR.Contracts" Version="2.0.1" />
 	</ItemGroup>
 </Project>
