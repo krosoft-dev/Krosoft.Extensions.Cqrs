@@ -23,7 +23,12 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.11" />
 		<PackageReference Include="MediatR" Version="12.5.0" />
 	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+		<PackageReference Include="MediatR" Version="12.5.0" />
+	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.9.18.3152" />
+		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.11.13.4103" />
 	</ItemGroup>
 </Project>
