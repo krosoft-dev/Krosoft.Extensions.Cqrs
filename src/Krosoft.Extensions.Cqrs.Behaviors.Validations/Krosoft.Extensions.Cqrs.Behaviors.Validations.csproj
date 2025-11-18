@@ -17,7 +17,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="FluentValidation" Version="11.12.0" />
-		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.11.13.4103" />
+		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.11.17.4348" />
 		<PackageReference Include="Krosoft.Extensions.Validations" Version="2025.11.13.4280" />
 	</ItemGroup>
 	<ItemGroup>
