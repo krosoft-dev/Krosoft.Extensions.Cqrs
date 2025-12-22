@@ -1,0 +1,18 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/samples/" />
+  <Folder Name="/src/">
+    <Project Path="src/Krosoft.Extensions.Cqrs.Behaviors.Identity/Krosoft.Extensions.Cqrs.Behaviors.Identity.csproj" />
+    <Project Path="src/Krosoft.Extensions.Cqrs.Behaviors.Validations/Krosoft.Extensions.Cqrs.Behaviors.Validations.csproj" />
+    <Project Path="src/Krosoft.Extensions.Cqrs.Behaviors/Krosoft.Extensions.Cqrs.Behaviors.csproj" />
+    <Project Path="src/Krosoft.Extensions.Cqrs/Krosoft.Extensions.Cqrs.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Krosoft.Extensions.Cqrs.Behaviors.Tests/Krosoft.Extensions.Cqrs.Behaviors.Tests.csproj" />
+  </Folder>
+</Solution>
