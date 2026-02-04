@@ -16,7 +16,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.1.14.4995" />
+		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.2.3.5273" />
 		<PackageReference Include="Krosoft.Extensions.Identity.Abstractions" Version="2026.1.19.5137" />
 	</ItemGroup>
 	<ItemGroup>
