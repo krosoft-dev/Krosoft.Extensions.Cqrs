@@ -17,7 +17,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.2.17.5475" />
-		<PackageReference Include="Krosoft.Extensions.Identity.Abstractions" Version="2026.2.17.5455" />
+		<PackageReference Include="Krosoft.Extensions.Identity.Abstractions" Version="2026.2.17.5533" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Krosoft.Extensions.Cqrs.Behaviors\Krosoft.Extensions.Cqrs.Behaviors.csproj" />
