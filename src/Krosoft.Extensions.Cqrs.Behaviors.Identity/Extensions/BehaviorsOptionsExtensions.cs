@@ -8,14 +8,14 @@ public static class BehaviorsOptionsExtensions
 {
     public static BehaviorsOptions AddIdentity(this BehaviorsOptions options)
     {
-        options.Add(typeof(AuthorizationPipelineBehavior<,>));
+        options.Add(typeof(AuthPipelineBehavior<,>));
 
         return options;
     }
 
     public static BehaviorsOptions AddApiKey(this BehaviorsOptions options)
     {
-        options.Add(typeof(ApiKeyPipelineBehavior<,>));
+        options.Add(typeof(AuthApiKeyPipelineBehavior<,>));
 
         return options;
     }

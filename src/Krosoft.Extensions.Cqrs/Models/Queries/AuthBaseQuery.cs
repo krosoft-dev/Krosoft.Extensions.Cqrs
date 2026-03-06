@@ -7,4 +7,3 @@ public record AuthBaseQuery<TResponse> : BaseQuery<TResponse>, IAuthQuery<TRespo
     public string? CurrentTenantId { get; set; }
     public string? CurrentUserId { get; set; }
 }
- 
