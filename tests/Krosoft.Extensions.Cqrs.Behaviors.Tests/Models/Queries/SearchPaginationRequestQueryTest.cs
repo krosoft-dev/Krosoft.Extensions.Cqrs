@@ -26,4 +26,24 @@ public class SearchPaginationRequestQueryTest
         Check.That(query.PaginationRequest.SortBy).IsEmpty();
         Check.That(query.PaginationRequest.Text).IsNull();
     }
+
+    [TestMethod]
+    [DataRow(-5, -10)]
+    [DataRow(0, 0)]
+    public void SetPagination_InvalidValues_FallbackToDefault(int pageNumber, int pageSize)
+    {
+        var pagination = new PaginationDto
+        {
+            PageNumber = pageNumber,
+            PageSize = pageSize
+        };
+        var query = new HelloSearchQuery
+        {
+            Name = "World"
+        };
+        query.SetPagination(pagination);
+
+        Check.That(query.PaginationRequest.PageNumber).IsEqualTo(1);
+        Check.That(query.PaginationRequest.PageSize).IsEqualTo(10);
+    }
 }
