@@ -1,4 +1,4 @@
-name: Nuget 'Krosoft.Extensions.Cqrs.Behaviors' - $(Date:yyyy.MM.dd).$(BuildID)
+name: Nuget 'Krosoft.Extensions.Cqrs' - $(Date:yyyy.MM.dd).$(BuildID)
 
 pr: none
 
@@ -15,10 +15,14 @@ trigger:
       - main
   paths:
     include:
-      - "**/Krosoft.Extensions.Cqrs.Behaviors/*"
+      - src
+      - Directory.Build.props
 
 extends:
   template: tools/devops/templates/pipelines/nuget-template.yml@Krosoft.Extensions
   parameters:
     packages:
+      - "Krosoft.Extensions.Cqrs"
       - "Krosoft.Extensions.Cqrs.Behaviors"
+      - "Krosoft.Extensions.Cqrs.Behaviors.Identity"
+      - "Krosoft.Extensions.Cqrs.Behaviors.Validations"
