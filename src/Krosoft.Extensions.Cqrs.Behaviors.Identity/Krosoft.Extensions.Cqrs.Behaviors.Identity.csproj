@@ -4,8 +4,8 @@
 		<Description>Package pour partager les IPipelineBehavior communes liées à Identity.</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.8.24.9632" />
-		<PackageReference Include="Krosoft.Extensions.Identity.Abstractions" Version="2026.8.21.9483" />
+		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.8.27.9744" />
+		<PackageReference Include="Krosoft.Extensions.Identity.Abstractions" Version="2026.8.28.9786" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Krosoft.Extensions.Cqrs.Behaviors\Krosoft.Extensions.Cqrs.Behaviors.csproj" />
