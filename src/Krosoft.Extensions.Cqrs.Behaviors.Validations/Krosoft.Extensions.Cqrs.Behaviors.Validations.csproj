@@ -4,7 +4,7 @@
 		<Description>Package pour partager les IPipelineBehavior communes liées à la validation.</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="FluentValidation" Version="12.1.1" />
+		<PackageReference Include="FluentValidation" Version="12.2.0" />
 		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.10.9.11143" />
 		<PackageReference Include="Krosoft.Extensions.Validations" Version="2026.9.13.10578" />
 	</ItemGroup>
