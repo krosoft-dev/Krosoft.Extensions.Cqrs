@@ -6,7 +6,7 @@
 	<ItemGroup>
 		<PackageReference Include="FluentValidation" Version="12.1.1" />
 		<PackageReference Include="Krosoft.Extensions.Core" Version="2026.10.9.11143" />
-		<PackageReference Include="Krosoft.Extensions.Validations" Version="2026.9.13.10578" />
+		<PackageReference Include="Krosoft.Extensions.Validations" Version="2026.10.10.11222" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Krosoft.Extensions.Cqrs.Behaviors\Krosoft.Extensions.Cqrs.Behaviors.csproj" /> 
